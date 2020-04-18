@@ -1,0 +1,18 @@
+alias reload="source ~/.bash_profile"
+alias _="sudo"
+alias g="git"
+alias diff="colordiff"
+
+
+# Directory listing/traversal
+alias l="ls -lahA --color=auto"
+alias ll="ls -lA --color=auto"
+alias lt="ls -lhAtr --color=auto --time-style=long-iso"
+alias ld="ls -ld --color=auto */"
+alias lpm="stat -c '%a %n' *"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias -- -="cd -"                  # Go to previous dir with -
+alias cd.='cd $(readlink -f .)'    # Go to real dir (i.e. if current dir is linked)
