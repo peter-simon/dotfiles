@@ -1,7 +1,6 @@
 # If not running interactively, don't do anything
 
 [ -z "$PS1" ] && return
-echo "CUSTOM BASHRC RUNNING!"
 
 # Resolve DOTFILES_DIR (assuming ~/.dotfiles on distros without readlink and/or $BASH_SOURCE/$0)
 
@@ -23,14 +22,12 @@ fi
 PATH="$DOTFILES_DIR/bin:$PATH"
 
 # Source the dotfiles (order matters)
-
 for DOTFILE in "$DOTFILES_DIR"/.{env,alias}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
-# Set LSCOLORS
+# Set colors 
 
-#eval "$(dircolors -b "$DOTFILES_DIR"/system/.dir_colors)"
 
 # Hook for extra/custom stuff
 
@@ -46,6 +43,8 @@ DOTFILES_EXTRA_DIR="$HOME/.extra"
 
 unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE EXTRAFILE
 
+# fzf stuff
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # Export
 
 export DOTFILES_DIR DOTFILES_EXTRA_DIR
