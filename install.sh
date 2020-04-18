@@ -1,12 +1,13 @@
 #!/bin/bash
 
+# INSTALLS
 # clone and install fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --key-bindings --completion --update-rc
-
+# search tool used for fzf
 sudo apt-get install silversearcher-ag
-# create the symlinks from the dotfile repo pointing to their existing location
+sudo apt-get colordiff
 
-# extend aliases
+# create the symlinks from the dotfile repo pointing to their existing location
 ln -sv ~/dotfiles/.bash_profile ~/.bash_profile
 ln -sv ~/dotfiles/.inputrc ~/.inputrc
