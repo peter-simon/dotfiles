@@ -8,4 +8,5 @@ sudo apt-get install silversearcher-ag
 # create the symlinks from the dotfile repo pointing to their existing location
 
 # extend aliases
-ln -sv ~/.dotfiles/runcom/.bashrc ~/.bashrc
+mv ~/.bashrc ~/.bashrc.backup
+ln -sv ~/dotfiles/.bashrc ~/.bashrc
