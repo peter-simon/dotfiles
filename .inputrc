@@ -5,4 +5,5 @@ set completion-ignore-case on
 set show-all-if-ambiguous on
 
 # Flip through autocompletion matches with Shift-Tab.
-"\e[Z": menu-complete
+TAB: menu-complete
+"\e[Z": complete
