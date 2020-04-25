@@ -22,7 +22,7 @@ fi
 PATH="$DOTFILES_DIR/bin:$PATH"
 
 # Source the dotfiles (order matters)
-for DOTFILE in "$DOTFILES_DIR"/.{env,alias}; do
+for DOTFILE in "$DOTFILES_DIR"/.{env,alias,functions}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
