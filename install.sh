@@ -5,7 +5,8 @@
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --key-bindings --completion --update-rc
 # search tool used for fzf
-sudo apt-get install silversearcher-ag
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.2/ripgrep_11.0.2_amd64.deb
+sudo dpkg -i ripgrep_11.0.2_amd64.deb
 sudo apt-get colordiff
 
 # create the symlinks from the dotfile repo pointing to their existing location
