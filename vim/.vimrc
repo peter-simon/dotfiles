@@ -5,7 +5,7 @@ call plug#end()
 
 " set colorscheme
 colorscheme PaperColor
-set background=light
+set background=dark
 
 " set hybrid line numbers
 set number relativenumber

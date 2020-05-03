@@ -18,14 +18,3 @@ sudo apt-get colordiff
 curl -LO https://github.com/sharkdp/fd/releases/download/v8.0.0/fd_8.0.0_amd64.deb
 sudo dpkg -i fd_8.0.0_amd64.deb
 
-# create the symlinks from the dotfile repo pointing to their existing location
-ln -sv ~/dotfiles/.bash_profile ~/.bash_profile
-ln -sv ~/dotfiles/.inputrc ~/.inputrc
-if [ -f ~/.gitconfig ]; then
-	cp ~/.gitconfig ~/.gitconfig.backup
-	echo "Overwriting .gitconfig. Backup created."
-fi
-
-ln -svf ~/dotfiles/git/.gitconfig ~/.gitconfig
-ln -svf ~/dotfiles/vim/.vimrc ~/.vimrc
-ln -svf ~/dotfiles/rg/.ripgreprc ~/.ripgreprc
