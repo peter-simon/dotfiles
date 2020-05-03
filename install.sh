@@ -25,5 +25,7 @@ if [ -f ~/.gitconfig ]; then
 	cp ~/.gitconfig ~/.gitconfig.backup
 	echo "Overwriting .gitconfig. Backup created."
 fi
+
 ln -svf ~/dotfiles/git/.gitconfig ~/.gitconfig
 ln -svf ~/dotfiles/vim/.vimrc ~/.vimrc
+ln -svf ~/dotfiles/rg/.ripgreprc ~/.ripgreprc
