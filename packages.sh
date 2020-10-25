@@ -18,3 +18,5 @@ sudo apt-get colordiff
 curl -LO https://github.com/sharkdp/fd/releases/download/v8.0.0/fd_8.0.0_amd64.deb
 sudo dpkg -i fd_8.0.0_amd64.deb
 
+# x11
+sudo apt install x11-xserver-utils 
