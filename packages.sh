@@ -14,6 +14,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 sudo apt-get colordiff
 
+# call vim plugin manager to install plugins
+vim +'PlugInstall --sync' +qa
+
 # install fd
 curl -LO https://github.com/sharkdp/fd/releases/download/v8.0.0/fd_8.0.0_amd64.deb
 sudo dpkg -i fd_8.0.0_amd64.deb
