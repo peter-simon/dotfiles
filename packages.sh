@@ -6,8 +6,8 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --key-bindings --completion --update-rc
 
 # Install ripgrep
-curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.2/ripgrep_11.0.2_amd64.deb
-sudo dpkg -i ripgrep_11.0.2_amd64.deb
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep_14.1.1-1_amd64.deb
+sudo dpkg -i ripgrep_14.1.1-1_amd64.deb
 
 # install vim plugin manger
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -18,8 +18,8 @@ sudo apt-get colordiff
 vim +'PlugInstall --sync' +qa
 
 # install fd
-curl -LO https://github.com/sharkdp/fd/releases/download/v8.0.0/fd_8.0.0_amd64.deb
-sudo dpkg -i fd_8.0.0_amd64.deb
+curl -LO https://github.com/sharkdp/fd/releases/download/v10.2.0/fd_10.2.0_amd64.deb 
+sudo dpkg -i fd_10.2.0_amd64.deb
 
 # x11
 sudo apt install x11-xserver-utils 

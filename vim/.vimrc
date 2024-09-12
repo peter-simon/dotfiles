@@ -1,6 +1,10 @@
 " Plugin handler
 call plug#begin('~/.vim/plugged')
 Plug 'NLKNguyen/papercolor-theme'
+" fzf native plugin
+Plug 'junegunn/fzf'
+" fzf.vim
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " set colorscheme
