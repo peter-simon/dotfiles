@@ -1,13 +1,15 @@
 # create the symlinks from the dotfile repo pointing to their existing location
-ln -sv ~/dotfiles/.bash_profile ~/.bash_profile
+basedir=$(pwd)
 
-ln -sv ~/dotfiles/.inputrc ~/.inputrc
+ln -sv "$basedir/.bash_profile" ~/.bash_profile
+
+ln -sv "$basedir/.inputrc" ~/.inputrc
 
 if [ -f ~/.gitconfig ]; then
 	cp ~/.gitconfig ~/.gitconfig.backup
 	echo "Overwriting .gitconfig. Backup created."
 fi
 
-ln -svf ~/dotfiles/git/.gitconfig ~/.gitconfig
-ln -svf ~/dotfiles/vim/.vimrc ~/.vimrc
-ln -svf ~/dotfiles/rg/.ripgreprc ~/.ripgreprc
+ln -svf "$basedir/git/.gitconfig" ~/.gitconfig
+ln -svf "$basedir/vim/.vimrc" ~/.vimrc
+ln -svf "$basedir/rg/.ripgreprc" ~/.ripgreprc
